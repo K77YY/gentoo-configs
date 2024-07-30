@@ -67,7 +67,8 @@
         "tooltip": false
     },
     "memory": {
-        "format": " {}%"
+        "format": " {}%",
+	"tooltip": false
     },
     "temperature": {
         "thermal-zone": 2,
@@ -75,7 +76,8 @@
         "critical-threshold": 80,
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+	"tooltip": false
     },
     "backlight": {
         // "device": "acpi_video1",
