@@ -1,0 +1,120 @@
+/**
+* @name gencoord
+* @author k77y
+* @version 1.2
+*/
+
+@import "https://comfy-themes.github.io/Discord/betterdiscord/main.css";
+@import "https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css";
+@import "https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css";
+@import "https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css";
+
+:root {
+  --disable-animations: 2s channel-unread infinite;
+
+  /*
+  *   >a higher value means more space between the icons; a lower value means less space
+  *   >if you want to revert those to the old area, join the support server and check #css-snippets
+  */
+  
+  /* 8px */
+  --user-buttons-spacing: 8px;
+  /* #096DC0 */
+  --user-buttons-color: #61538d;
+
+  /* 
+  *   >a higher value means more rounded corners; a lower value means less rounded corners
+  *       0 -> square
+  *       25 -> circle
+  */
+
+  /* 5px */
+  --avatar-radius: 0px; 
+  /* 3px */
+  --status-radius: 0px;
+  /* 8px */
+  --server-radius: 0px;
+  /*   change the value to "100%" if you want the default one */
+  --colored-emoji: grayscale(1%);
+  
+  /* #F04747 */
+  --mention-color: #6e56af;
+  /* #7289DA */
+  --unread-color: #7289da;
+  /* #C66262 */
+  --mention-color-bar: #61538d;
+  /* #C662621F */
+  --mention-color-background: #6e56af38;
+  /* #C6626226 */
+  --mention-color-hover: #6e56af4b;
+  
+  /* #7289DA */
+  --chat-buttons: #61538d;
+  /* https://betterdiscord.app/plugin/SpotifyControls */
+  /* #1EDC62 */
+  --spotify-color: #61538d;
+
+  /* #43B581 */
+  --online: #43b581;
+  /* #FAA61A */
+  --iddle: #faa61a;
+  /* #F04747 */
+  --dnd: #f04747;
+  /* #747F8D */
+  --offline: #747f8d;
+  /* #593695 */
+  --streaming: #593695;
+
+  /* playing wave color */
+  --playing: #7289da;
+  /* listening wave color */
+  --listening: #1db653;
+  /* 5px */
+  --role-circle: 0px;
+  
+  /* set it to "block" if you still want it */
+  --discord-logo: none;
+}
+
+.theme-dark {
+  --background-primary: #0d0d0d;
+  --background-secondary: #0d0d0d;
+  --background-secondary-alt: #0d0d0d;
+  --background-tertiary: #0d0d0d;
+  --background-accent: #0d0d0d;
+
+  --modal-background: #0d0d0d;
+  --background-mobile-primary: #0d0d0d;
+  --background-mobile-secondary: #0d0d0d;
+  --channeltextarea-background: #0d0d0d;
+  --background-message-hover: transparent;
+  --background-modifier-hover: #0d0d0d;
+  --background-modifier-active: #0d0d0d1a;
+  --background-modifier-selected: #0d0d0d1f;
+  --deprecated-card-bg: #0d0d0d63;
+  --background-floating: #0d0d0d;
+  --deprecated-quickswitcher-input-background: #0d0d0d;
+  --elevation-low: none;
+  --scrollbar-auto-thumb: #0d0d0d;
+  --scrollbar-auto-track: #0d0d0d;
+  --scrollbar-thin-thumb: #0d0d0d;
+  --activity-card-background: #0d0d0d;
+  --input-background: #0d0d0d;
+  --header-primary: #61538d;
+  --header-secondary: #61538d;
+  --text-normal: #61538d;
+}
+
+.theme-light {
+  --background-primary: #0d0d0d;
+  --background-secondary: #0d0d0d;
+  --background-secondary-alt: #0d0d0d;
+  --background-tertiary: #0d0d0d;
+  --background-accent: #7289da;
+  --background-modifier-hover: #0d0d0d;
+  --background-modifier-active: #0d0d0d;
+  --modal-background: var(--background-primary);
+  --header-primary: #a9b1d6;
+  --header-secondary: #a9b1d6;
+  --text-normal: #61538d;
+}
