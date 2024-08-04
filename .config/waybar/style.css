@@ -70,21 +70,11 @@ button:hover {
 }
 
 #clock,
-#battery,
-#cpu,
-#memory,
 #disk,
 #temperature,
-#backlight,
 #network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
+#wireplumber {
   margin: 2px;
   padding-left: 4px;
   padding-right: 4px;
@@ -104,42 +94,6 @@ button:hover {
   font-weight: bold;
 }
 
-#battery icon {
-  color: red;
-}
-
-#battery.charging, #battery.plugged {
-  color: #ffffff;
-  background-color: #26A65B;
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
-}
-
-#battery.warning:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-#battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
 label:focus {
   background-color: #000000; 
 }
@@ -149,20 +103,6 @@ label:focus {
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
 
