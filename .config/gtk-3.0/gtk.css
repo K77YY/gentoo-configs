@@ -1,0 +1,55 @@
+@define-color bgdark rgb(13, 13, 13);
+@define-color purple rgb(110, 86, 175);
+@define-color cadet rgb(50, 52, 74);
+
+.thunar {background-color: @bgdark;}
+.thunar menubar {background-color: @bgdark;}
+.thunar grid paned stack slider {background-color: @purple;}
+
+.thunar>grid>paned {
+	border-style: solid; 
+	border-color: @purple; 
+	border-width: 1px 0px 0px 0px;
+}
+.thunar>grid>paned>paned {background-color: @bgdark; border-color: @purple;}
+.thunar>grid>paned>paned>grid>widget {background-color: @bgdark;}
+.thunar grid paned paned grid paned notebook stack {background-color: @bgdark;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow {
+	background-color: @bgdark;
+	border-style: solid;
+	border-color: @purple;
+	border-width: 0px 0px 1px 0px;
+}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow treeview {background-color: @bgdark;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow treeview:hover {background-color: @cadet;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow treeview:selected {background-color: @cadet;}
+
+.thunar grid paned paned grid infobar box {background-color: @purple;}
+.thunar grid paned paned grid infobar box box {background-color: @purple;}
+.thunar>grid>paned>box>scrolledwindow {border-style: none;}
+.thunar>grid>toolbar>toolitem>widget>box entry {
+	background-color: @bgdark; 
+	border-style: solid; 
+	border-color: @purple;
+}
+.thunar>grid>paned box {background-color: @bgdark;}
+.thunar>grid toolbar {background-color: @bgdark;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow>treeview>header button {background-color: @bgdark; border-color: @purple;}
+.thunar>grid>paned>box>scrolledwindow treeview {background-color: @bgdark;}
+.thunar>grid>paned>box .view:hover {background-color: @cadet; border-radius: 0px 0px 0px 0px;}
+.thunar>grid>paned>box .view:selected {background-color: @cadet; border-radius: 0px 0px 0px 0px;}
+
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow>widget {background-color: @bgdark;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow>widget widget {
+	background-color: @bgdark; 
+	border-radius:0px;
+}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow>widget widget:hover {background-color: @cadet;}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow>widget widget:selected {background-color: @cadet;}
+.thunar .frame.standard-view .rubberband {
+	background-color: @bgdark; 
+	border-radius: 0px;
+}
+.thunar>grid>paned>paned>grid>paned>notebook>stack>scrolledwindow treeview {border-color: @purple;}
+
+#footer_box {background-color: @purple; color: white;}
