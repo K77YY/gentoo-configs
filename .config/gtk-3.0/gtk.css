@@ -1,5 +1,5 @@
 @define-color bgdark rgb(13, 13, 13);
-@define-color purple rgb(110, 86, 175);
+@define-color purple rgb(32, 32, 32);
 @define-color cadet rgb(50, 52, 74);
 
 .thunar {background-color: @bgdark;}
@@ -30,7 +30,7 @@
 .thunar>grid>toolbar>toolitem>widget>box entry {
 	background-color: @bgdark; 
 	border-style: solid; 
-	border-color: @purple;
+	border-color: #6e56af;
 }
 .thunar>grid>paned box {background-color: @bgdark;}
 .thunar>grid toolbar {background-color: @bgdark;}
